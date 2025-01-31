@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Departure Mono';
+  src: url('/fonts/DepartureMono-Regular.woff2') format('woff2'),
+    url('/fonts/DepartureMono-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Departure Mono', sans-serif;
+  color: rgb(43, 255, 0);
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}

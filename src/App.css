@@ -1,0 +1,189 @@
+.color-bg {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #000000;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+
+  overflow: hidden;
+}
+
+.header {
+  width: 100vw;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #00000083;
+
+  font-size: 2rem;
+
+  padding: 2rem 5rem 2rem;
+
+  gap: 4rem;
+
+  transition: all 300ms ease-out;
+
+  z-index: 10;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    gap: 3rem;
+  }
+
+  @media (max-width: 700px) {
+    gap: 2rem;
+  }
+
+  @media (max-width: 600px) {
+    gap: 1rem;
+
+    padding: 1rem 5rem 1rem;
+  }
+}
+
+.social-link {
+  transition: all 200ms ease-out;
+
+  @media (max-width: 600px) {
+    flex: 1 1 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
+.contract-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  background-color: #00000083;
+  padding: 2rem;
+  border-radius: 5px;
+
+  font-size: 2rem;
+
+  margin-bottom: 10vh;
+
+  transition: all 300ms ease-out;
+
+  max-width: 95vw;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 3vh;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    gap: 10px;
+  }
+}
+
+.contract-wrapper p {
+  overflow-wrap: break-word;
+  word-break: break-word;
+
+  text-align: center;
+}
+
+.copy-btn {
+  cursor: pointer;
+
+  padding: 10px;
+
+  font-size: 1.25rem;
+
+  border: none;
+  outline: none;
+
+  background-color: #1faf26;
+  color: rgb(0, 0, 0);
+
+  font-family: 'Departure Mono', sans-serif;
+
+  border-radius: 10%;
+}
+
+@keyframes rotate360InZAxis {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.image-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  width: 58vh;
+  height: 58vh;
+
+  @media (max-width: 1024px) {
+    width: 58vw;
+    height: 58vw;
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+
+  /* 3D Perspective */
+  perspective: 1000px;
+
+  animation: rotate360InZAxis 3s linear infinite;
+}
+
+.copied-text {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #00000093;
+
+  color: rgb(43, 255, 0);
+
+  font-size: 2.25rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+}
