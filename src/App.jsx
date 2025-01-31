@@ -1,4 +1,5 @@
 import Contract from './Contract'
+import AnimatedBackground from './AnimatedBackground'
 
 import './App.css'
 
@@ -23,6 +24,8 @@ function App() {
           Raydium
         </a>
       </header>
+
+      <AnimatedBackground />
 
       <div className='image-wrapper'>
         <img src="/hoodfart.png" alt="Fork" className='image' />
