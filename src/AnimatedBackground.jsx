@@ -35,7 +35,7 @@ export default function AnimatedBackground() {
           className="floating-image"
           style={{ top: `${image.top}%`, width: `${image.size}px`, height: `${image.size}px` }}
           initial={{ x: "-100%" }}
-          animate={{ x: "110vw" }}
+          animate={{ x: "150vw" }}
           exit={{ opacity: 0 }}
           transition={{ duration: image.speed, ease: "linear" }} // Random speed
         >
